@@ -1,13 +1,17 @@
 const express = require("express");
-
 const PORT = process.env.PORT || 3001;
 const app = express();
-const { notes } = require("./db/db.json");
+const htmlRoutes = require("./routes/htmlRoutes");
+const apiRoutes = require("./routes/apiRoutes");
 
-app.get("/api/notes", (req, res) => {
-  res.send(notes);
-});
+app.use(express.urlencoded({ extended: true })); // parse incoming string || array
+app.use(express.json()); // parse incoming JSON data
+app.use(express.static("public")); // serve static files
 
+app.use("/api", apiRoutes);
+app.use("/", htmlRoutes);
+
+// open localhost
 app.listen(PORT, () => {
   console.log(`We out here on port ${PORT}!`);
 });
