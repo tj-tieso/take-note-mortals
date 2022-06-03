@@ -40,7 +40,17 @@ const saveNote = (note) =>
       "Content-Type": "application/json",
     },
     body: JSON.stringify(note),
-  });
+  })
+    .then((response) => {
+      if (response.ok) {
+        return response.json();
+      }
+      alert("Error: " + response.statusText);
+    })
+    .then((postResponse) => {
+      console.log(postResponse);
+      alert("Note added!");
+    });
 
 const deleteNote = (id) =>
   fetch(`/api/notes/${id}`, {
@@ -66,15 +76,11 @@ const renderActiveNote = () => {
   }
 };
 
-const handleNoteSave = (event) => {
-  event.preventDefault();
-
-  console.log("Save Button Clicked");
+const handleNoteSave = () => {
   const newNote = {
     title: noteTitle.value,
     text: noteText.value,
   };
-  console.log(newNote);
   saveNote(newNote).then(() => {
     getAndRenderNotes();
     renderActiveNote();

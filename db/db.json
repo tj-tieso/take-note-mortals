@@ -1,16 +1,12 @@
-{
-  "notes": [
-    {
-      "title": "TEST 1",
-      "text": "Test text 1"
-    },
-    {
-      "title": "TEST 2",
-      "text": "Test text 2"
-    },
-    {
-      "title": "TEST 3",
-      "text": "test text 3"
-    }
-  ]
-}
+[
+  {
+    "title": "First Note!",
+    "text": "this is the first note",
+    "id": "ab4774a1-365a-41c9-a932-bba23b5467d9"
+  },
+  {
+    "title": "Second Note",
+    "text": "this is the second note!",
+    "id": "b2352bd8-9724-4978-8a63-e18ed661502e"
+  }
+]
