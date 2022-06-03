@@ -1,6 +1,40 @@
-# Note Taker Starter Code
+# Take Note, Mortals!
 
-## User Story
+## Project Description
+
+Take Note, Mortals! is a note taking application that allows users to enter a Title and Text for notes they'd like to leave themselves.
+
+## Table of Contents
+
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributors](#contributors)
+- [License](#license)
+- [Questions](#questions)
+
+## Installation
+
+You can find the deployed application [here](https://take-note-mortals.herokuapp.com).
+
+## Usage
+
+Write and Save notes for tasks you need to complete.
+
+![image](assets\images\take-note-mortals-screenshot.png)
+
+## Contributors
+
+## License
+
+## Questions
+
+#### Contact me at:
+
+Email: tj.tieso@gmail.com
+
+Github: [tj-tieso](https://github.com/tj-tieso)
+
+# User Story
 
 AS A small business owner
 I WANT to be able to write and save notes
