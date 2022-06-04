@@ -13,5 +13,5 @@ app.use("/", htmlRoutes);
 
 // open localhost
 app.listen(PORT, () => {
-  console.log(`We out here on port ${PORT}!`);
+  console.log(`Follow http://localhost:${PORT} to launch the app!`);
 });
